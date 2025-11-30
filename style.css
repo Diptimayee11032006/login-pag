@@ -1,0 +1,113 @@
+/* Full-Screen Background with Image + Gradient Overlay */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: url("https://th.bing.com/th/id/OIP.7vLshYurJm9cE75uWB5OTgHaEK?w=291&h=181&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3") no-repeat center center/cover; /* Replace with your image name */
+}
+
+/* Optional: Add a Gradient Overlay for better contrast */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(58, 12, 163, 0.7), rgba(114, 9, 183, 0.7), rgba(67, 97, 238, 0.6));
+  z-index: 1;
+}
+
+form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* Container */
+.login-container {
+  text-align: center;
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+/* Login Box */
+.login-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  width: 320px;
+}
+
+/* Labels */
+label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+/* Login Button */
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #8e2de2;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #7a1fc2;
+}
+
+/* Register Text */
+.register-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.register-text a {
+  color: #00e0ff;
+  text-decoration: none;
+}
+
+.register-text a:hover {
+  text-decoration: underline;
+}
